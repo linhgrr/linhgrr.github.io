@@ -3,13 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Embedded Space App</title>
+  <title>Gemininh</title>
   <style>
-    /* Reset cơ bản */
     *,*::before,*::after{box-sizing:border-box}
     html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
 
-    /* Container full-page, responsive */
     .iframe-root{
       position:fixed;
       top:0;left:0;
@@ -69,7 +67,6 @@
     
 
     <main class="iframe-container" role="main">
-      <!-- Iframe gốc, giữ nguyên các thuộc tính sandbox và allow như yêu cầu -->
       <iframe
         src="https://linhdzqua148-linhvip.hf.space/"
         aria-label="docker space app"
@@ -81,13 +78,10 @@
         style="overflow:auto;"
       ></iframe>
 
-      <!-- Fallback: hiển thị khi iframe bị chặn hoặc không load được -->
       <div class="fallback" hidden id="iframe-fallback">
         Không thể hiển thị ứng dụng trong iframe. <a href="https://linhdzqua148-linhvip.hf.space/" target="_blank" rel="noopener">Mở trực tiếp trang tại đây</a>.
       </div>
     </main>
   </div>
-
-  <!-- Lưu ý: tệp này chỉ dùng HTML + CSS thuần. Nếu bạn muốn tách CSS ra file .css hoặc thêm Javascript để kiểm soát kích thước/resize, mình có thể tạo luôn. -->
 </body>
 </html>
